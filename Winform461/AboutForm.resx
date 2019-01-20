@@ -117,13 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="IDS_ACTION_DOWNLOAD" xml:space="preserve">
-    <value>Download update</value>
-  </data>
-  <data name="IDS_ACTION_INSTALL" xml:space="preserve">
-    <value>Install update</value>
-  </data>
-  <data name="IDS_STATUS_FOUND" xml:space="preserve">
-    <value>An update was found. Open chrlauncher and press 'Download update'.</value>
-  </data>
 </root>

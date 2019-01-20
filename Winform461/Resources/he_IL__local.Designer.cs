@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Winform461.Properties {
+namespace Winform461.Resources {
     using System;
     
     
@@ -22,14 +22,14 @@ namespace Winform461.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    internal class he_IL__local {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources() {
+        internal he_IL__local() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace Winform461.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Winform461.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Winform461.Resources.he_IL__local", typeof(he_IL__local).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,7 +61,7 @@ namespace Winform461.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Download update.
+        ///   Looks up a localized string similar to התחל הורדה.
         /// </summary>
         internal static string IDS_ACTION_DOWNLOAD {
             get {
@@ -70,20 +70,11 @@ namespace Winform461.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install update.
+        ///   Looks up a localized string similar to התקן עדכון.
         /// </summary>
         internal static string IDS_ACTION_INSTALL {
             get {
                 return ResourceManager.GetString("IDS_ACTION_INSTALL", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to An update was found. Open chrlauncher and press &apos;Download update&apos;..
-        /// </summary>
-        internal static string IDS_STATUS_FOUND {
-            get {
-                return ResourceManager.GetString("IDS_STATUS_FOUND", resourceCulture);
             }
         }
     }
