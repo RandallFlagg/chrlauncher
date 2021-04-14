@@ -1,22 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24627.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "chrlauncher", "chrlauncher.vcxproj", "{881CEBE2-C261-4DC0-9977-DEC9EE134854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Debug|Any CPU.ActiveCfg = Debug|Win32
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Debug|x64.ActiveCfg = Debug|x64
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Debug|x64.Build.0 = Debug|x64
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Debug|x86.ActiveCfg = Debug|Win32
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Debug|x86.Build.0 = Debug|Win32
+		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Release|Any CPU.ActiveCfg = Release|Win32
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Release|x64.ActiveCfg = Release|x64
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Release|x64.Build.0 = Release|x64
 		{881CEBE2-C261-4DC0-9977-DEC9EE134854}.Release|x86.ActiveCfg = Release|Win32
@@ -24,5 +28,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15E06AF2-58F4-4DCB-BFF0-F77DA440D807}
 	EndGlobalSection
 EndGlobal
