@@ -10,6 +10,9 @@ using System.Reflection;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.Text.Json.Serialization;
+using System.IO.Enumeration;
+using System.Net.Http.Json;
+using ClassLibrary1;
 
 namespace ConsoleApp1
 {
@@ -28,17 +31,17 @@ namespace ConsoleApp1
 
         private static readonly HttpClient client = new HttpClient();
         private const string OS = "windows";
-        private const string BIT = "64";
-        private const string OUT = "string"; //https://chromium.woolyss.com/#api
+        private const int BIT = 64;
+        private const string OUT = "json"; //https://chromium.woolyss.com/#api
         //https://chromium.woolyss.com/api/?os=windows&bit=64&out=string
-        private const string CHROMIUM_UPDATE_URL = $"https://chromium.woolyss.com/api/?os={OS}&bit={BIT}&out={OUT}";
+        private static readonly string CHROMIUM_UPDATE_URL = $"https://chromium.woolyss.com/api/?os={OS}&bit={BIT}&out={OUT}";
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Class1.LOG("Hello World!");
 
-            var update_url = _r_config_getstring("ChromiumUpdateUrl");
-
+            await Class1.DownloadFile(new Uri(CHROMIUM_UPDATE_URL), 64);
+            return;
             var platform = ChromiumPlatform.Win64;
             var baseUrlDownload =
                 "https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=";
@@ -60,11 +63,6 @@ namespace ConsoleApp1
                 $"https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/{platformName}%2F{version}%2Fchrome-win.zip?alt=media";
             var savePath = Path.Combine(AssemblyDirectory, $"chromium_{version}.zip");
             await ProcessDownload(downloadUrl, savePath);
-        }
-
-        private static string _r_config_getstring(string searchString)
-        {
-            CHROMIUM_UPDATE_URL
         }
 
         private static async Task<string> ProcessLatestVersion(string url)
